@@ -41,27 +41,31 @@
             </tr>
             </thead>
             <tbody>
-    <%--        <c:if test="${f:length(ds) != 0}">--%>
-    <%--            <c:forEach items="${ ds }" var="kh">--%>
-            <tr>
-                <td>Văn</td>
-                <td>Văn</td>
-                <td>Văn</td>
-                <td>AAA</td>
-                <td>21/12/2001</td>
-                <td>0912123321</td>
-                <td>TVB</td>
-                <td>HN</td>
-                <td>VN</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Cập nhật</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-danger">Xóa</a>
-                </td>
-            </tr>
-                <%--            </c:forEach>--%>
-                <%--        </c:if>--%>
+            <c:forEach items="${ danhSachKH }" var="kh">
+                <tr>
+                    <td>${ kh.ma }</td>
+                    <td>${ kh.ho }</td>
+                    <td>${ kh.ten_dem }</td>
+                    <td>${ kh.ten }</td>
+                    <td>21/12/2001</td>
+                    <td>0912123321</td>
+                    <td>TVB</td>
+                    <td>HN</td>
+                    <td>VN</td>
+                    <td>
+                        <a class="btn btn-primary"
+                           href="/SP23B2_SOF3011_IT17313_war_exploded/khach-hang/edit?ma=${ kh.ma }">
+                            Cập nhật
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger"
+                           href="/SP23B2_SOF3011_IT17313_war_exploded/khach-hang/delete?ma=${ kh.ma }">
+                            Xóa
+                        </a>
+                    </td>
+                </tr>
+            </c:forEach>
             </tbody>
         </table>
     </c:if>
