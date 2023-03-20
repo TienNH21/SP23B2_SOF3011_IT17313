@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/SP23B2_SOF3011_IT17313_war_exploded/css/bootstrap.min.css" />
 </head>
 <body>
-<div class="col-8 offset-2 mt-5 table-responsive">
+<div class="col-10 offset-1 mt-5 table-responsive">
     <div class="row">
         <div class="col-6">
             <a href="#" class="btn btn-success">Thêm mới</a>
